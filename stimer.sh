@@ -9,4 +9,4 @@ else
     time=$1
 fi
 
-echo "DISPLAY=:0.0 xdotool key Escape ; notify-send \"RAPPEL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\"" | at now+$time min
+echo "DISPLAY=:0.0 xdotool key Escape ; notify-send -t 60000 \"RAPPEL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\"" | at now+$time min
